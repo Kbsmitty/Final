@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Outdoor Company</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Outdoor Company</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <!-- Header section with main image -->
     <header>
-        <img src="images/header.jpg" alt="Stunning Outdoor Landscape" class="header-image">
+        <div class="header-overlay">
+            <div class="top-bar">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <img src="images/logo.png" alt="Outdoor Adventures Logo" class="logo">
+            </div>
+            <div class="header-content">
+                <h1>Explore the Great Outdoors</h1>
+                <p>Join us in embracing the wild, with our top-quality gear and resources for every adventure.</p>
+                <a href="page1.html" class="button">Learn More</a>
+            </div>
+        </div>
+        <img src="images/header.jpg" alt="Header Image">
     </header>
 
-    <!-- Main content area with three image links -->
-    <div class="image-links">
-        <a href="page1.html">
-            <img src="images/mountain.jpg" alt="Link to Page 1" class="content-image">
-        </a>
-        <a href="page2.html">
-            <img src="images/hiking.jpg" alt="Link to Page 2" class="content-image">
-        </a>
-        <a href="page3.html">
-            <img src="images/hunting.jpg" alt="Link to Page 3" class="content-image">
-        </a>
-    </div>
+    <main>
+        <!-- Main content goes here -->
+        <!--<p>Welcome to our outdoor company website. We specialize in providing high-quality outdoor gear and equipment for all your adventures.</p> -->
+        <!-- Main content area with three image links -->
+        <div id="main-content" class="main-content">
+            <div class="image-links">
+                <a href="page1.html" class="image-link">
+                    <img src="images/mountain.jpg" alt="Link to Page 1" class="content-image">
+                    <h2>Gear</h2>
+                </a>
+                <a href="page2.html" class="image-link">
+                    <img src="images/hiking.jpg" alt="Link to Page 2" class="content-image">
+                    <h2>Plan a Trip</h2>
+                </a>
+                <a href="page3.html" class="image-link">
+                    <img src="images/hunting.jpg" alt="Link to Page 3" class="content-image">
+                    <h2>Contact Us</h2>
+                </a>
+                <a href="page4.html" class="image-link">
+                    <img src="images/fishing.jpg" alt="Link to Page 4" class="content-image">
+                    <h2>About Us</h2>
+                </a>
+            </div>
+        </div>
+    </main>
 
-    <!-- Footer with social media links and contact info -->
     <footer>
-        <div class="social-media">
-            <a href="https://facebook.com/yourcompany">Facebook</a>
-            <a href="https://instagram.com/yourcompany">Instagram</a>
-            <a href="https://twitter.com/yourcompany">Twitter</a>
-        </div>
-        <div class="contact-us">
-            <p>Contact us: <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p>
-        </div>
+        <p>Follow us on social media:</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <p>Contact us at: example@example.com</p>
     </footer>
 </body>
+
 </html>
