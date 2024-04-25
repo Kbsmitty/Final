@@ -1,3 +1,31 @@
+
+.fade-in {
+    opacity: 0; /* Initially make the element transparent */
+}
+
+/* Define a keyframe animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with transparency */
+        transform: translateY(50px); /* Start slightly below its final position */
+    }
+    to {
+        opacity: 1; /* Fully opaque */
+        transform: translateY(0); /* Translate to its final position */
+    }
+}
+
+/* Apply the animation to the element */
+.fade-in {
+    animation: fadeIn 1s ease forwards; /* Apply the animation with a duration of 1 second */
+}
+
+/* Center the paragraph */
+.main-content {
+    margin-top: 20px;
+    text-align: center;
+}
+
 body, html {
     margin: 0;
     padding: 0;

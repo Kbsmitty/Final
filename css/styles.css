@@ -69,35 +69,43 @@ nav a:hover {
 }
 
 .button:hover {
-    background-color: #000000; /* Color changes to green when hovered */
+    background-color: #000000; 
 }
 
 .button:active {
-    background-color: #000000; /* Optional: darker green when the button is clicked */
+    background-color: #000000; 
 }
 
 header img {
     width: 100%;
 }
 
-main {
-    padding: 50px;
-}
+
 
 /* Footer for social media links */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
-    clear: both;
+    text-align: left;
     width: 100%;
+}
+
+footer h1 {
+    margin-right: 20px; /* Adjust as needed */
 }
 
 footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer a img {
+    width: 20px; /* Adjust the size of the images as needed */
+    margin-right: 5px; /* Adjust as needed */
 }
 
 footer a:hover {
