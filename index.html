@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outdoor Adventures</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,10 +19,10 @@
             <div class="top-bar">
                 <img src="images/logo.png" alt="Outdoor Adventures Logo" class="logo">
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Trips</a>
-                    <a href="#">Gear</a>
-                    <a href="#">About</a>
+                    <a href="index.html">Home</a>
+                    <a href="trips.html">Trips</a>
+                    <a href="gear.html">Gear</a>
+                    <a href="about.html">About</a>
                 </nav>
             </div>
             <div class="header-content">
@@ -31,28 +35,25 @@
     </header>
 
     <main>
-
         <!--<p>Welcome to our outdoor company website. We specialize in providing high-quality outdoor gear and equipment for all your adventures.</p> -->
         <!-- Main content area with image links to other pages. -->
-        <div id="main-content" class="main-content">
-            <div class="image-links">
-                <a href="gear.html" class="image-link">
-                    <img src="images/mountain.jpg" alt="Link to Page 1" class="content-image">
-                    <h2>Gear</h2>
+        <div class="image-links">
+            <a href="gear.html" class="image-link">
+                <img src="images/mountain.jpg" alt="Link to Page 1" class="content-image">
+                <h2>Gear</h2>
+            </a>
+            <a href="trips.html" class="image-link">
+                <img src="images/hiking.jpg" alt="Link to Page 2" class="content-image">
+                <h2>Plan a Trip</h2>
+            </a>
+            <a href="about.html" class="image-link">
+                <img src="images/hunting.jpg" alt="Link to Page 3" class="content-image">
+                <h2>Contact Us</h2>
                 </a>
-                <a href="trips.html" class="image-link">
-                    <img src="images/hiking.jpg" alt="Link to Page 2" class="content-image">
-                    <h2>Plan a Trip</h2>
-                </a>
-                <a href="about.html" class="image-link">
-                    <img src="images/hunting.jpg" alt="Link to Page 3" class="content-image">
-                    <h2>Contact Us</h2>
-                </a>
-                <a href="html/page4.html" class="image-link">
-                    <img src="images/fishing.jpg" alt="Link to Page 4" class="content-image">
-                    <h2>About Us</h2>
-                </a>
-            </div>
+            <a href="html/page4.html" class="image-link">
+                <img src="images/fishing.jpg" alt="Link to Page 4" class="content-image">
+                <h2>About Us</h2>
+            </a>
         </div>
 
         <!-- Section under buttons with larger image-->
@@ -65,13 +66,48 @@
             <img src="images/explore2.jpg" alt="Adventure Awaits">
         </div>
     </main>
-
     <footer>
-        <h1>Find Us On</h1>
-        <a href="#"><img src="images/facebook.jpg" alt="Facebook icon">Facebook</a>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter icon">Twitter</a>
-        <a href="#"><img src="images/instagram.jpg" alt="Instagram icon">Instagram</a>
-        <p>Contact us at: example@example.com</p>
-    </footer>
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
 </body>
 </html>

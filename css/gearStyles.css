@@ -1,28 +1,29 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+/* Navigation bar */
+.side-nav a:hover {
+    text-decoration: underline;
 }
 
-header {
-    position: relative;
-}
-
-.header-overlay {
-    position: absolute;
+.side-nav {
+    position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    z-index: 2; /* Ensure header content is above the image */
+    right: 0; /* Adjusted from left: 0 to right: 0 to move the nav bar to the right side */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
 }
 
+.side-nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
 .header-content {
     padding: 20px;
     text-align: left;
+    color: #2d5551;
 }
 
 .header-content h1 {
@@ -35,78 +36,65 @@ header {
     margin: 0 0 20px;
 }
 
-.button {
-    padding: 10px 20px;
-    background-color: #db6906; /* Initial background color */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-    border: none; /* Optional: remove if button should have a border */
-    outline: none; /* Optional: remove focus outline */
-    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
-}
-
-.button:hover {
-    background-color: #000000; /* Color changes to green when hovered */
-}
-
-.button:active {
-    background-color: #000000; /* Optional: darker green when the button is clicked */
-}
-
 header img {
     width: 100%;
 }
 
-
-.side-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.side-nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    display: block;
-}
-
-.header-content h1 {
-    margin: 0 0 20px;
-    font-size: 36px;
-}
-
-.button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
 .main-content {
-    margin-top: 20px; /* Provide spacing from the header */
+    margin: 50px; /* Provide spacing from the header */
+    position: relative; /* Ensure the main content is positioned relatively */
 }
 
-.content-image:hover {
-    transform: scale(1.1);
+.section-header {
+    height: 700px; /* Height of each image section */
+    width: 100%; /* Full width */
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
+.section-header h1 {
+    margin: 20px 0 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section-header p {
+    margin: 0 0 20px;
+    font-size: 19px;
+}
+
+.content-boarder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border-color: #2d5551;
+}
 
 .image-links {
+    position: relative; /* Position the image links relative to the main content */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     gap: 10px; /* Adds space between the images */
+}
+
+.image-link {
+    flex: 1 1 20%; /* Allows the items to grow and shrink but not smaller than 20% */
+    max-width: 300px; /* Maximum width for larger screens */
+    position: relative;
+    display: inline-block;
+}
+
+.content-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border-color: #2d5551;
+    transition: transform 0.3s ease;
 }
 
 .content-image:hover {
@@ -115,93 +103,13 @@ header img {
 
 .image-link h2 {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 0;
     right: 0;
     text-align: center;
-    margin: 0;
+    margin: 0; /* Remove the margin */
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 0;
     border-radius: 5px;
     font-size: 20px;
-}
-
-.image-link {
-    position: relative;
-    height: 300px; /* Height of each image section */
-    width: 100%; /* Full width */
-}
-
-.content-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure images cover their div */
-}
-
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Footer for social media links */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: left;
-    width: 100%;
-}
-
-footer h1 {
-    margin-right: 20px; /* Adjust as needed */
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-}
-
-footer a img {
-    width: 20px; /* Adjust the size of the images as needed */
-    margin-right: 5px; /* Adjust as needed */
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-
-@media (max-width: 768px) {
-    .side-nav, .header-content {
-        text-align: center;
-        position: static;
-        width: 100%;
-    }
-    
-    .main-content, footer {
-        margin-left: 0;
-    }
-}
-
-nav {
-    background-color: #2d5551;
-    padding: 10px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }

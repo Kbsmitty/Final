@@ -1,6 +1,14 @@
 /* Header section for overlay of text, logo, and navigation bar */
 header {
     position: relative;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #24262b;
 }
 
 .header-overlay {
@@ -27,14 +35,19 @@ header {
 
 /* Navigation bar */
 nav {
-    background-color: #2d5551; 
+    /* background-color: #2d5551; */
     padding: 10px;
 }
 
 nav a {
-    color: #fff;
+    color: #2d5551;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 40px;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold; /* Set the font weight to bold */
+
+    display: inline-block;
+
 }
 
 nav a:hover {
@@ -54,6 +67,7 @@ nav a:hover {
 
 .header-content p {
     margin: 0 0 20px;
+    font-size: 19px;
 }
 
 .button {
@@ -80,61 +94,133 @@ header img {
     width: 100%;
 }
 
-
-
 /* Footer for social media links */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: left;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  background-color: #24262b;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #24262b;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  background-color: #24262b;
+}
+
+h4 {
+  font-size: 18px;
+  color: white; /* Set color for all h4 elements */
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #2d5551;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white; /* Ensure link color matches */
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: black;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: black;
+  background-color: rgba(87,75,68,255);
+}
+
+/* Responsive styling */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
     width: 100%;
+  }
 }
 
-footer h1 {
-    margin-right: 20px; /* Adjust as needed */
-}
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-}
-
-footer a img {
-    width: 20px; /* Adjust the size of the images as needed */
-    margin-right: 5px; /* Adjust as needed */
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
 
 .image-links {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-}
-
-.content-image {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-
-.content-image:hover {
-    transform: scale(1.1);
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
 }
 
 .image-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
     gap: 10px; /* Adds space between the images */
 }
 
@@ -150,6 +236,7 @@ footer a:hover {
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    border-color: #2d5551;
     transition: transform 0.3s ease;
 }
 
@@ -159,22 +246,23 @@ footer a:hover {
 
 .image-link h2 {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 0;
     right: 0;
     text-align: center;
-    margin: 0;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin: 70px;
+    color: #fff; 
     padding: 5px 0;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* Full-width image section */
 .full-width-image {
     position: relative;
     margin-top: 70px;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
 }
 
 .full-width-image img {
