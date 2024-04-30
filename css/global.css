@@ -1,0 +1,292 @@
+/* Header section for overlay of text, logo, and navigation bar */
+header {
+    position: relative;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 2; /* Ensure header content is above the image */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Navigation bar */
+nav {
+    /* background-color: #2d5551; */
+    padding: 10px;
+    border: 1px solid #4d8e87;
+}
+
+nav a {
+    color: #4d8e87;
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold; /* Set the font weight to bold */
+    display: inline-block;
+
+}
+
+nav a:hover {
+   color:#db6906
+}
+
+.header-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.header-content h1 {
+    margin: 20px 0 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-content p {
+    margin: 0 0 20px;
+    font-size: 19px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #db6906; /* Initial background color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    border: none; /* Optional: remove if button should have a border */
+    outline: none; /* Optional: remove focus outline */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+
+.button:hover {
+    background-color: #000000; 
+}
+
+.button:active {
+    background-color: #000000; 
+}
+
+header img {
+    width: 100%;
+}
+
+/* Footer for social media links */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background-color: #c6ccde;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  background-color: #24262b;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #24262b;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  background-color: #24262b;
+}
+
+h4 {
+  font-size: 18px;
+  color: white; /* Set color for all h4 elements */
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #2d5551;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white; /* Ensure link color matches */
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: black;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: black;
+  background-color: rgba(87,75,68,255);
+}
+
+/* Responsive styling */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+
+
+.image-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+}
+
+.image-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 10px; /* Adds space between the images */
+}
+
+.image-link {
+    flex: 1 1 20%; /* Allows the items to grow and shrink but not smaller than 20% */
+    max-width: 300px; /* Maximum width for larger screens */
+    position: relative;
+    display: inline-block;
+}
+
+.content-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border-color: #2d5551;
+    transition: transform 0.3s ease;
+}
+
+.content-image:hover {
+    transform: scale(1.1);
+}
+
+.image-link h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 70px;
+    color: #fff; 
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+/* Full-width image section */
+.full-width-image {
+    position: relative;
+    margin-top: 70px;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+}
+
+.full-width-image img {
+    width: 100%;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.image-overlay h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.image-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.full-width-image .button {
+    padding: 15px 30px;
+    font-size: 20px;
+}

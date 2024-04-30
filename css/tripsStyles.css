@@ -1,0 +1,140 @@
+
+.fade-in {
+    opacity: 0; /* Initially make the element transparent */
+}
+
+/* Define a keyframe animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with transparency */
+        transform: translateY(50px); /* Start slightly below its final position */
+    }
+    to {
+        opacity: 1; /* Fully opaque */
+        transform: translateY(0); /* Translate to its final position */
+    }
+}
+
+/* Apply the animation to the element */
+.fade-in {
+    animation: fadeIn 1s ease forwards; /* Apply the animation with a duration of 1 second */
+}
+
+/* Center the paragraph */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c6ccde;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  font-family: "Asap", sans-serif; 
+}
+
+.main-content {
+  text-align: center;
+  background-color: #c6ccde;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Optional: adds subtle shadow for better focus */
+  width: 100%; 
+}
+
+.main-text, .location-text {
+  justify-content: center;
+  vertical-align: top;
+  width: 100%; 
+  padding: 20px;
+  font-size: 16px; 
+  text-align: left; 
+  margin-left: 50px;
+}
+
+.main-insert {
+  width: 500px; 
+  height: auto;
+  margin: 20px;
+  display: inline-block;
+ 
+}
+
+.content-wrapper {
+  display: block; /* Change display to block for vertical stacking */
+  width: 100%; /* Full width */
+  margin: auto; /* Center the content-wrapper */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  text-align: center;
+  color: #2d5551;
+  z-index: 2; 
+}
+
+.header-content::after {
+  content: '';
+  display: block;
+  width: 15%; 
+  height: 2px; 
+  background-color: #fff; 
+  margin-top: 10px; 
+}
+
+.header-content p {
+  margin: 0 0 20px;
+}
+
+.header-content p {
+  margin: 0 0 20px;
+}
+
+header img {
+  width: 500px;
+  height: 900px;
+}
+
+.trip-info {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.trip-info-item {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+}
+
+.trip-image {
+    width: 100%;
+    max-width: 500px; /* Adjust the image width as needed */
+    height: auto;
+    margin-right: 20px;
+    border: 3px solid #4d8e87;
+    padding: 20px;
+}
+
+.trip-details {
+    text-align: left;
+    font-size: 10px;
+}
+
+.trip-description {
+    flex: 0 0 50%;
+    text-align: left;
+    border: 1px solid #4d8e87;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

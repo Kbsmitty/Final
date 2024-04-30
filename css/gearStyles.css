@@ -1,12 +1,45 @@
-/* Navigation bar */
-.side-nav a:hover {
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #424449;
+}
+
+.header-overlay {
+    position: relative;
+}
+
+
+.header-qoute {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Align the quote to the right side */
+    transform: translateY(-50%);
+    text-align: right; /* Align the text to the right */
+    padding: 0 20px; /* Adjust padding as needed */
+    color: #fff;
+    z-index: 1; /* Ensure the quote is above the header content */
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 80px;
+}
+
+.header-qoute::after {
+    content: '';
+    display: block;
+    width: 100%; /* Adjust the width of the line as needed */
+    height: 2px; /* Adjust the height of the line as needed */
+    background-color: #fff; /* Adjust the color of the line as needed */
+    margin-top: 10px; /* Adjust the space between the text and the line */
+}
+
+/*.side-nav a:hover {
     text-decoration: underline;
 }
 
 .side-nav {
     position: fixed;
     top: 0;
-    right: 0; /* Adjusted from left: 0 to right: 0 to move the nav bar to the right side */
+    right: 0; 
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -19,11 +52,13 @@
     text-decoration: none;
     color: white;
     display: block;
-}
+    border: 3px solid #2d5551;
+} */
+
 .header-content {
     padding: 20px;
     text-align: left;
-    color: #2d5551;
+    color: #fff;
 }
 
 .header-content h1 {
@@ -34,6 +69,7 @@
 
 .header-content p {
     margin: 0 0 20px;
+    word-wrap:break-word;
 }
 
 header img {
@@ -46,15 +82,19 @@ header img {
 }
 
 .section-header {
+    position: inherit;
     height: 700px; /* Height of each image section */
     width: 100%; /* Full width */
     margin-bottom: 20px;
     padding: 20px;
 }
 
-.section-header h1 {
-    margin: 20px 0 10px;
-    font-size: 50px;
+.section-header h2 {
+    position: absolute; /* Set position to absolute */
+    top: 40px; /* Adjust as needed for the top positioning */
+    left: 40px; /* Adjust as needed for the left positioning */
+    color: #fff;
+    font-size: 70px;
     font-weight: bold;
 }
 
