@@ -12,12 +12,12 @@ body {
 .header-qoute {
     position: absolute;
     top: 50%;
-    right: 0; /* Align the quote to the right side */
+    right: 0; 
     transform: translateY(-50%);
-    text-align: right; /* Align the text to the right */
-    padding: 0 20px; /* Adjust padding as needed */
+    text-align: right; 
+    padding: 0 20px; 
     color: #fff;
-    z-index: 1; /* Ensure the quote is above the header content */
+    z-index: 1; 
     font-size: 25px;
     font-weight: 800;
     margin-top: 80px;
@@ -26,34 +26,11 @@ body {
 .header-qoute::after {
     content: '';
     display: block;
-    width: 100%; /* Adjust the width of the line as needed */
-    height: 2px; /* Adjust the height of the line as needed */
-    background-color: #fff; /* Adjust the color of the line as needed */
-    margin-top: 10px; /* Adjust the space between the text and the line */
+    width: 100%; 
+    height: 2px; 
+    background-color: #fff; 
+    margin-top: 10px; 
 }
-
-/*.side-nav a:hover {
-    text-decoration: underline;
-}
-
-.side-nav {
-    position: fixed;
-    top: 0;
-    right: 0; 
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.side-nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    display: block;
-    border: 3px solid #2d5551;
-} */
 
 .header-content {
     padding: 20px;
@@ -77,22 +54,22 @@ header img {
 }
 
 .main-content {
-    margin: 50px; /* Provide spacing from the header */
-    position: relative; /* Ensure the main content is positioned relatively */
+    margin: 50px; 
+    position: relative; 
 }
 
 .section-header {
     position: inherit;
-    height: 700px; /* Height of each image section */
-    width: 100%; /* Full width */
+    height: 700px; 
+    width: 100%; 
     margin-bottom: 20px;
     padding: 20px;
 }
 
 .section-header h2 {
-    position: absolute; /* Set position to absolute */
-    top: 40px; /* Adjust as needed for the top positioning */
-    left: 40px; /* Adjust as needed for the left positioning */
+    position: absolute; 
+    top: 40px; 
+    left: 40px; 
     color: #fff;
     font-size: 70px;
     font-weight: bold;
@@ -112,18 +89,18 @@ header img {
 }
 
 .image-links {
-    position: relative; /* Position the image links relative to the main content */
+    position: relative; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 40px;
     margin-bottom: 50px;
-    gap: 10px; /* Adds space between the images */
+    gap: 10px; 
 }
 
 .image-link {
-    flex: 1 1 20%; /* Allows the items to grow and shrink but not smaller than 20% */
-    max-width: 300px; /* Maximum width for larger screens */
+    flex: 1 1 20%; 
+    max-width: 300px; 
     position: relative;
     display: inline-block;
 }
@@ -147,7 +124,7 @@ header img {
     left: 0;
     right: 0;
     text-align: center;
-    margin: 0; /* Remove the margin */
+    margin: 0; 
     color: #fff;
     padding: 5px 0;
     border-radius: 5px;

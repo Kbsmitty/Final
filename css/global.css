@@ -13,7 +13,7 @@ header {
     padding: 20px;
     text-align: center;
     color: #fff;
-    z-index: 2; /* Ensure header content is above the image */
+    z-index: 2; 
 }
 
 .top-bar {
@@ -29,7 +29,6 @@ header {
 
 /* Navigation bar */
 nav {
-    /* background-color: #2d5551; */
     padding: 10px;
     border: 1px solid #4d8e87;
 }
@@ -38,8 +37,8 @@ nav a {
     color: #4d8e87;
     text-decoration: none;
     margin: 0 40px;
-    font-size: 25px; /* Adjust the font size as needed */
-    font-weight: bold; /* Set the font weight to bold */
+    font-size: 25px; 
+    font-weight: bold; 
     display: inline-block;
 
 }
@@ -66,14 +65,14 @@ nav a:hover {
 
 .button {
     padding: 10px 20px;
-    background-color: #db6906; /* Initial background color */
+    background-color: #db6906; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-    border: none; /* Optional: remove if button should have a border */
-    outline: none; /* Optional: remove focus outline */
-    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    transition: background-color 0.3s ease;
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
 }
 
 .button:hover {
@@ -96,7 +95,7 @@ body {
   padding: 0;
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
-  background-color: #c6ccde;
+  background-color: #b2b3b6; ;
 }
 
 * {
@@ -134,7 +133,7 @@ ul {
 
 h4 {
   font-size: 18px;
-  color: white; /* Set color for all h4 elements */
+  color: white; 
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
@@ -159,7 +158,7 @@ h4 {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: white; /* Ensure link color matches */
+  color: white; 
   text-decoration: none;
   font-weight: 300;
   display: block;
@@ -171,7 +170,7 @@ h4 {
   padding-left: 8px;
 }
 
-.footer-col .social-links a {
+.footer-col .social-links a .Facebook .Twitter .Instagram {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -218,12 +217,12 @@ h4 {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 40px;
-    gap: 10px; /* Adds space between the images */
+    gap: 10px; 
 }
 
 .image-link {
-    flex: 1 1 20%; /* Allows the items to grow and shrink but not smaller than 20% */
-    max-width: 300px; /* Maximum width for larger screens */
+    flex: 1 1 20%; 
+    max-width: 300px; 
     position: relative;
     display: inline-block;
 }
